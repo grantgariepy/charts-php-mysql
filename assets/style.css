@@ -1,0 +1,244 @@
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+.video-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  
+  
+  
+  @media(min-width: 600px) {
+    height: 100vh;
+  };
+  
+}
+
+
+video {
+  object-fit: cover; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*** A E S T H E T I C S ***/
+/***************************/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+  
+}
+
+body {
+  background: #2c2c2c;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  
+}
+video:after{
+  background-image : linear-gradient(to bottom, 
+  rgba(255,255,255, 0), 
+  rgba(255,255,255, 1) 90%);
+}
+.video-container:after {
+  content: '';
+  display: block;
+  
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(black, .2);
+  z-index: 1;
+  pointer-events   : none;
+  background-image : linear-gradient(to bottom, 
+                  rgba(255,255,255, 0), 
+                  rgb(44, 44, 44) 90%);
+  width    : 100%;
+  height   : 50vh;
+  
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  padding: 0;
+  text-shadow:
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+  line-height: 1;
+  font-family: 'Comfortaa', cursive;
+  filter: drop-shadow(0px 0px 10px gray);
+  font-size: 5vw;
+  @media (max-width: 400px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 75px;
+  }
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+
+container-fluid{
+  width: 100vh;
+}
+
+
+
+.bar-chart{
+  padding-bottom: 10vh;
+  
+}
+
+#bar-chart-info{
+padding-bottom: 10vh;
+}
+
+.info{
+padding-bottom: 50vh;
+}
+a{
+color: rgba(0, 0, 0, 0.2)  
+}
+
+.color-buttons{
+  padding-top: 20px;
+  font-family: 'Comfortaa', cursive;
+  
+}
+
+.btn-red{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(255, 99, 132, 1) solid 1px;
+  background-color: rgba(255, 99, 132, 0.2);
+  color: rgba(255, 99, 132, 1);
+  margin: 20px 20px 20px 20px;
+}
+.btn-red:hover{
+  background-color: rgba(255, 99, 132, 1);
+  color: rgb(73, 28, 38);
+}
+.btn-blue{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(54, 162, 235, 1) solid 1px;
+  background-color: rgba(54, 162, 235, 0.2);
+  color: rgba(54, 162, 235, 1);
+  margin: 20px 20px 20px 20px;
+}
+.btn-blue:hover{
+  background-color: rgba(54, 162, 235, 1);
+  color: rgb(24, 75, 109);
+}
+.btn-yellow{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(255, 206, 86, 1) solid 1px;
+  background-color: rgba(255, 206, 86, 0.2);
+  color: rgba(255, 206, 86, 1);
+  margin: 20px 20px 20px 20px;
+}
+.btn-yellow:hover{
+  background-color: rgba(255, 206, 86, 1);
+  color: rgb(105, 85, 34);
+}
+.btn-green{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(75, 192, 192, 1) solid 1px;
+  background-color: rgba(75, 192, 192, 0.2);
+  color: rgba(75, 192, 192, 1);
+  margin: 20px 20px 20px 20px;
+}
+.btn-green:hover{
+  background-color: rgba(75, 192, 192, 1);
+  color: rgb(33, 87, 49);
+}
+.btn-purple{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(153, 102, 255, 1) solid 1px;
+  background-color: rgba(153, 102, 255, .2);
+  color: rgba(153, 102, 255, 1);
+  margin: 20px 20px 20px 20px;
+}
+.btn-purple:hover{
+  background-color: rgba(153, 102, 255, 1);
+  color: rgb(58, 36, 102);
+}
+.btn-orange{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(255, 159, 64, 1) solid 1px;
+  background-color: rgba(255, 159, 64, .2);
+  color: rgba(255, 159, 64, 1);
+  margin: 20px 20px 20px 20px;
+}
+.btn-orange:hover{
+  background-color: rgba(255, 159, 64, 1);
+  color: rgb(100, 68, 36);
+}
+.btn-white{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(255, 255, 255, 1) solid 1px;
+  background-color: rgba(255, 255, 255, .2);
+  color: rgba(255, 255, 255, 1);
+  margin: 20px 20px 20px 20px;
+}
+.btn-white:hover{
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
+}
+.btn-black{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  border: rgba(0, 0, 0, 1) solid 1px;
+  background-color: rgba(0, 0, 0, .2);
+  color: rgb(255, 255, 255);
+  margin: 20px 20px 20px 20px;
+}
+.btn-black:hover{
+  background-color: rgba(0, 0, 0, 1);
+  color: rgb(255, 255, 255);
+}
+
+.main{
+padding-bottom: 100vh;
+}
